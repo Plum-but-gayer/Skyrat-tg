@@ -151,6 +151,41 @@
 	icon_state = "multitool_cyborg"
 	items_to_create = list(/obj/item/screwdriver/cyborg, /obj/item/wirecutters/cyborg, /obj/item/multitool/abductor/implant)
 
+/obj/item/organ/internal/cyberimp/arm/electrical
+	name = "electrical toolset implant"
+	desc = "An small hand implant containing an advanced screwdriver, wirecutters, and multitool - all of which fit handily inside your fingers!"
+	icon = 'icons/obj/items_cyborg.dmi'
+	icon_state = "multitool_cyborg"
+	items_to_create = list(/obj/item/screwdriver/cyborg, /obj/item/wirecutters/cyborg, /obj/item/multitool/abductor/implant)
+
+/// bespoke subtypes for augs menu since it's a bit wonky
+
+/obj/item/organ/internal/cyberimp/arm/electrical/right_arm
+    zone = BODY_ZONE_R_ARM
+    slot = ORGAN_SLOT_RIGHT_ARM_AUG
+/obj/item/organ/internal/cyberimp/arm/electrical/left_arm
+    zone = BODY_ZONE_L_ARM
+    slot = ORGAN_SLOT_LEFT_ARM_AUG
+
+/obj/item/organ/internal/cyberimp/arm/mechanic
+	name = "mechanical toolset implant"
+	desc = "An industrial arm implant produced by Nakamura engineering, with tools for construction and mechanical repairs. "
+	actions_types = list(/datum/action/item_action/organ_action/toggle/toolkit)
+	items_to_create = list(
+		/obj/item/screwdriver/cyborg,
+		/obj/item/wrench/cyborg,
+		/obj/item/weldingtool/largetank/cyborg/mechanic,
+		/obj/item/crowbar/cyborg,
+	)
+
+/// bespoke subtypes for augs menu since it's a bit wonky
+/obj/item/organ/internal/cyberimp/arm/mechanic/right_arm
+    zone = BODY_ZONE_R_ARM
+    slot = ORGAN_SLOT_RIGHT_ARM_AUG
+/obj/item/organ/internal/cyberimp/arm/mechanic/left_arm
+    zone = BODY_ZONE_L_ARM
+    slot = ORGAN_SLOT_LEFT_ARM_AUG
+
 /obj/item/organ/internal/cyberimp/arm/botany
 	name = "botany arm implant"
 	desc = "A rather simple arm implant containing tools used in gardening and botanical research."
@@ -218,6 +253,14 @@
 	items_list += WEAKREF(new /obj/item/lighter(src)) //Now you can choose between bad and worse!
 	obj_flags |= EMAGGED
 	return TRUE
+
+/// bespoke subtypes for augs menu since it's a bit wonky
+/obj/item/organ/internal/cyberimp/arm/lighter/right_arm
+    zone = BODY_ZONE_R_ARM
+    slot = ORGAN_SLOT_RIGHT_ARM_AUG
+/obj/item/organ/internal/cyberimp/arm/lighter/left_arm
+    zone = BODY_ZONE_L_ARM
+    slot = ORGAN_SLOT_LEFT_ARM_AUG
 
 #undef KNIFE_HITSOUND
 #undef KNIFE_USESOUND
