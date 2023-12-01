@@ -172,7 +172,7 @@
 	desc = "An industrial arm implant produced by Nakamura engineering, with tools for construction and mechanical repairs. "
 	actions_types = list(/datum/action/item_action/organ_action/toggle/toolkit)
 	items_to_create = list(
-		/obj/item/screwdriver/cyborg,
+		/obj/item/screwdriver,
 		/obj/item/wrench/cyborg,
 		/obj/item/weldingtool/largetank/cyborg/mechanic,
 		/obj/item/crowbar/cyborg,

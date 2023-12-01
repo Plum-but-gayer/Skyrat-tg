@@ -24,10 +24,10 @@
     cost = 4
     path = /obj/item/organ/internal/cyberimp/arm/razor_claws/left_arm
 
-/datum/augment_item/implant/l_arm/hacking_implant
-    name = "Left Hacking Implant"
+/datum/augment_item/implant/l_arm/electrical_implant
+    name = "Left Electrical Toolset Implant"
     cost = 4
-    path = /obj/item/organ/internal/cyberimp/arm/hacker/left_arm
+    path = /obj/item/organ/internal/cyberimp/arm/electrical/left_arm
 
 /datum/augment_item/implant/l_arm/mechanic_implant
     name = "Left Mechanical Toolset Implant"
@@ -36,7 +36,7 @@
 
 /datum/augment_item/implant/l_arm/lighter_implant
     name = "Left Lighter Implant"
-    cost = 2
+    cost = 1
     path = /obj/item/organ/internal/cyberimp/arm/lighter/left_arm
 
 //RIGHT ARM IMPLANTS
@@ -48,10 +48,10 @@
     cost = 4
     path = /obj/item/organ/internal/cyberimp/arm/razor_claws/right_arm
 
-/datum/augment_item/implant/r_arm/hacking_implant
-    name = "Right Hacking Implant"
+/datum/augment_item/implant/r_arm/electrical_implant
+    name = "Right Electrical Toolset Implant"
     cost = 4
-    path = /obj/item/organ/internal/cyberimp/arm/hacker/right_arm
+    path = /obj/item/organ/internal/cyberimp/arm/electrical/right_arm
 
 /datum/augment_item/implant/r_arm/mechanic_implant
     name = "Right Mechanical Toolset Implant"
@@ -60,7 +60,7 @@
 
 /datum/augment_item/implant/r_arm/lighter_implant
     name = "Right Lighter Implant"
-    cost = 2
+    cost = 1
     path = /obj/item/organ/internal/cyberimp/arm/lighter/right_arm
 
 //EYES IMPLANTS
