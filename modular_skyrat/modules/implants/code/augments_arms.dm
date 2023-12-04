@@ -156,7 +156,7 @@
 	desc = "An small hand implant containing an advanced screwdriver, wirecutters, and multitool - all of which fit handily inside your fingers!"
 	icon = 'icons/obj/items_cyborg.dmi'
 	icon_state = "multitool_cyborg"
-	items_to_create = list(/obj/item/screwdriver/cyborg, /obj/item/wirecutters/cyborg, /obj/item/multitool/abductor/implant)
+	items_to_create = list(/obj/item/screwdriver/cyborg, /obj/item/wirecutters/cyborg, /obj/item/multitool/cyborg)
 
 /// bespoke subtypes for augs menu since it's a bit wonky
 
