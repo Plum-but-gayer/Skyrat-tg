@@ -60,7 +60,7 @@
 	lefthand_file = 'modular_skyrat/modules/implants/icons/razorclaws_lefthand.dmi'
 	icon_state = "wolverine"
 	inhand_icon_state = "wolverine"
-	var/knife_force = 10
+	var/knife_force = 13
 	w_class = WEIGHT_CLASS_BULKY
 	var/knife_wound_bonus = 5
 	var/cutter_force = CUTTER_FORCE
@@ -172,7 +172,7 @@
 	desc = "An industrial arm implant produced by Nakamura engineering, with tools for construction and mechanical repairs. "
 	actions_types = list(/datum/action/item_action/organ_action/toggle/toolkit)
 	items_to_create = list(
-		/obj/item/screwdriver,
+		/obj/item/screwdriver/cyborg,
 		/obj/item/wrench/cyborg,
 		/obj/item/weldingtool/largetank/cyborg/mechanic,
 		/obj/item/crowbar/cyborg,
@@ -261,6 +261,17 @@
 /obj/item/organ/internal/cyberimp/arm/lighter/left_arm
     zone = BODY_ZONE_L_ARM
     slot = ORGAN_SLOT_LEFT_ARM_AUG
+
+
+/obj/item/organ/internal/cyberimp/arm/paramedic
+	name = "emergency medical implant"
+	desc = "A set of medical tools designed to stabilize most forms of wound, implanted into a user's arm."
+	actions_types = list(/datum/action/item_action/organ_action/toggle/toolkit)
+	items_to_create = list(
+		/obj/item/cautery/augment,
+		/obj/item/bonesetter,
+		/obj/item/healthanalyzer/advanced,
+	)
 
 #undef KNIFE_HITSOUND
 #undef KNIFE_USESOUND
