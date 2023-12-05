@@ -269,6 +269,7 @@
 	actions_types = list(/datum/action/item_action/organ_action/toggle/toolkit)
 	items_to_create = list(
 		/obj/item/cautery/augment,
+		/obj/item/hemostat/augment,
 		/obj/item/bonesetter,
 		/obj/item/healthanalyzer/advanced,
 	)
